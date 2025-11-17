@@ -30,6 +30,9 @@ const enable = (button) => {
 
 // TODO 5: Declare an isCorrect function that compares a guess to the right answer
 // isCorrect(guess) should return true if the guess matches the fact's answer
+const isCorrect = (guess) => {
+  return guess === fact.answer.toString();
+};
 
 // TODO 6A: Use a for loop to add a click event listener to each of the optionButtons
 // TODO 6B: Within the event handler function, display the fact's explanation by setting the text of the explanation element
