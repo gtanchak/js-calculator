@@ -20,11 +20,12 @@ statementEle.textContent = fact.statement;
 // TODO 4: Declare disable & enable functions to set or remove the "disabled" attribute from a given button element
 // disable(button) should set the button element's attribute "disabled" to the value ""
 // enable(button) should remove the attribute "disabled" from the button element
-const disable = () => {
-  optionsButtons.setAttribute("disabled", "");
+const disable = (button) => {
+  button.setAttribute("disabled", "");
 };
-const enable = () => {
-  optionsButtons.removeAttribute("disabled", "");
+
+const enable = (button) => {
+  button.removeAttribute("disabled", "");
 };
 
 // TODO 5: Declare an isCorrect function that compares a guess to the right answer
